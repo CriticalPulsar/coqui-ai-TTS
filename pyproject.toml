@@ -63,7 +63,7 @@ dependencies = [
     "matplotlib>=3.7.0",
     # Coqui stack
     "coqui-tts-trainer>=0.1.4",
-    "coqpit>=0.0.16",
+    "coqpit>=0.1.0",
     # Gruut + supported languages
     "gruut[de,es,fr]>=2.4.0",
     # Tortoise
@@ -136,6 +136,10 @@ dev-dependencies = [
     "pre-commit>=3",
     "ruff==0.7.0",
 ]
+
+[tool.uv.sources]
+coqpit = { git = "https://github.com/idiap/coqui-ai-coqpit", branch = "types" }
+coqui-tts-trainer = { git = "https://github.com/idiap/coqui-ai-Trainer", branch = "coqpit" }
 
 [project.urls]
 Homepage = "https://github.com/idiap/coqui-ai-TTS"
